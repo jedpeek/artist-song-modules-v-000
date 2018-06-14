@@ -8,7 +8,11 @@ require_relative '../lib/artist.rb'
 require_relative '../lib/song.rb'
 
 module Memorable
-  def self.reset_all
+  def reset_all
     self.all.clear
+  end
+
+  def self.count
+     @@artists.count
   end
 end
